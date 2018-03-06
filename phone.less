@@ -1,0 +1,97 @@
+@navc: white;
+@color: #333333;
+@size: 60px;
+nav{
+    display:none;
+}
+:target{ 
+    display:block;
+ }
+.p{
+	display: block;
+    background-color:@color;
+	height:240px;
+    width:100px;
+    margin: 10px;
+    float: right;
+    margin-top: 60px;
+}
+.p div{
+    box-shadow: 0px 10px 0px @navc, 0px -10px 0px @navc;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+}
+#nav ul li{
+     list-style: none;
+     width: 100%;
+     padding: 5px;
+     margin: 5px;
+}
+#nav a{
+    text-decoration: none;
+    color: @navc;   
+    font-weight: bold; 
+    font-size: @size;
+}      
+.navcontainer{
+    min-height: 300px;
+    margin-bottom: 90px;
+} 
+.slideclick {
+    width: 100px;
+    height: 100px;
+    min-width: 0px;
+}     
+.slide{
+    min-width: 70%;
+    
+}
+.slide img{
+    min-width: 100%;
+    
+}
+body{
+    top: -18px;
+    min-width: 100%;
+    position: absolute;
+}
+.maincontainer{
+       background-color: @navc;
+       padding: 60px;
+}
+label, input, textarea{
+    display: inline-block;
+    padding-bottom: 14px;
+}
+label{
+    width: 100%;
+}
+.videos object{
+    min-width: 1000px;
+    min-height: 500px;
+}
+.footer img{
+    width: 150px;
+    height: 150px;
+}
+body, button, label{
+    font-size: xx-large;
+}
+button{
+    font-size: 50px;
+}
+input, textarea, label, p, button, li, .foot, .main, .nav{
+        min-width: 70%;
+    font-size: 50px;
+}
+input, textarea{
+    border: 3px solid black;
+}
+tr td:first-child{
+    text-align: right;
+    margin: 8px;
+}
+td{
+    padding-right: 8px;
+}

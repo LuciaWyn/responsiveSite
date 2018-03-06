@@ -1,0 +1,93 @@
+@color: #333333;
+@full: 100%;
+@mainc: #222222;
+@face: arial;
+
+.navcontainer {
+    background-color: @color;
+    width: 100%;
+    color: white;
+}
+.nav ul{
+    list-style: none;
+    background-color: @color;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+.maincontainer, .navcontainer, .footercontainer{
+    width: @full;
+    font-family: @face;
+    width: 100%;
+}
+.maincontainer{
+    background-color: @mainc;
+    overflow: auto;
+    min-height: 88vh;
+}
+.main, .nav, .footer {
+    font-family: @face;
+        padding: 10px;
+}
+.main{
+    background-color: white;
+    min-height: 100vh;
+}
+.footercontainer{
+    background-color: #808080;
+}
+body{
+    margin: 0px;
+    min-height: 100%;
+    overflow: auto;
+}
+.slide:not(:first-child), .tracks{
+    display: none;
+}
+
+.slide a{
+    text-decoration: none;
+    color:white;
+}
+.slideclick{
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    outline: none;
+}
+.slideclick:not(:first-child){
+    background-color: lightsteelblue;
+}
+.slideclick:first-child{
+    background-color: royalblue;
+}
+.slidelinks{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.videos object, .album{
+    display: block;
+    padding-bottom: 40px;
+}
+.track{
+    color: blue;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+button{
+    outline: none;
+}
+.social a{
+    text-decoration: none;
+}
+input[type="submit"]{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
